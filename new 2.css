@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; /* برای منوی کشویی */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li .dropdown {
+    display: none; /* پنهان کردن منوی کشویی */
+    position: absolute; /* قرار دادن منوی کشویی در زیر گزینه */
+    background: #444; /* رنگ پس‌زمینه منوی کشویی */
+    padding: 10px 0;
+    z-index: 1; /* اطمینان از اینکه منوی کشویی بالای سایر عناصر قرار گیرد */
+}
+
+nav ul li:hover .dropdown {
+    display: block; /* نمایش منوی کشویی هنگام هاور */
+}
+
+nav ul li .dropdown li {
+    display: block; /* نمایش گزینه‌های منوی کشویی به صورت عمودی */
+    margin: 0; /* حذف حاشیه */
+}
+
+.sidebar {
+    width: 200px; /* عرض منوی جانبی */
+    background: #f4f4f4; /* رنگ پس‌زمینه منوی جانبی */
+    padding: 15px; /* حاشیه داخلی */
+    float: left; /* قرار دادن منوی جانبی در سمت چپ */
+    margin-right: 20px; /* فاصله از محتوای اصلی */
+}
+
+.sidebar h2 {
+    margin-top: 0; /* حذف حاشیه بالای عنوان */
+}
+
+.sidebar ul {
+    list-style: none; /* حذف نقاط لیست */
+    padding: 0; /* حذف حاشیه داخلی */
+}
+
+.sidebar ul li {
+    margin: 10px 0; /* فاصله بین گزینه‌ها */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /*
